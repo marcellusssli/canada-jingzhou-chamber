@@ -58,14 +58,25 @@
 
 <script>
 function showLang(lang){
-  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  localStorage.setItem('siteLang', lang);
+
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){
+    el.style.display='none';
+  });
+
   document.querySelectorAll('.' + lang).forEach(function(el){
-    if(el.tagName === 'SPAN'){el.style.display='inline';}
-    else{el.style.display='block';}
+    if(el.tagName === 'SPAN'){
+      el.style.display='inline';
+    }else{
+      el.style.display='block';
+    }
   });
 }
-window.onload=function(){showLang('zh');}
-</script>
 
+window.onload=function(){
+  var savedLang = localStorage.getItem('siteLang') || 'zh';
+  showLang(savedLang);
+}
+</script>
 </body>
 </html>
