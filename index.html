@@ -4,24 +4,194 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>加拿大荆州商会 | Canada Jingzhou Chamber of Commerce</title>
+
 <style>
-body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:#f6f6f6;color:#222}
-nav{height:72px;background:white;display:flex;align-items:center;justify-content:space-between;padding:0 8%;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
-.logo{font-weight:bold;color:#003366;font-size:20px}
-.menu a{margin:0 12px;text-decoration:none;color:#222;font-weight:500}
-.lang button{border:0;background:#003366;color:white;padding:7px 12px;border-radius:18px;margin-left:5px;cursor:pointer}
-.hero{background:linear-gradient(rgba(0,45,90,.78),rgba(0,45,90,.78)),url('https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:white;text-align:center;padding:130px 20px}
-.hero h1{font-size:54px;margin:0 0 15px}
-.hero p{font-size:22px}
-.container{max-width:1100px;margin:auto;padding:50px 20px}
-.section{background:white;margin:28px 0;padding:40px;border-radius:14px;box-shadow:0 3px 12px rgba(0,0,0,.08);line-height:1.8}
-.section h2{text-align:center;color:#003366;margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.box{background:#f1f5f9;padding:25px;border-radius:12px;text-align:center}
-.box h3{color:#003366}
-footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:40px}
-.en,.fr{display:none}
-@media(max-width:800px){nav{flex-direction:column;height:auto;padding:15px}.menu{margin:10px 0}.menu a{display:inline-block;margin:6px}.hero h1{font-size:36px}}
+body{
+  margin:0;
+  font-family:Arial,"Microsoft YaHei",sans-serif;
+  background:#f6f6f6;
+  color:#222;
+}
+
+nav{
+  min-height:78px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6%;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  color:#003366;
+  font-weight:bold;
+}
+
+.logo img{
+  height:58px;
+  margin-right:12px;
+}
+
+.logo-text{
+  line-height:1.2;
+}
+
+.menu a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#222;
+  font-weight:500;
+}
+
+.menu a:hover{
+  color:#003366;
+}
+
+.lang button{
+  border:0;
+  background:#003366;
+  color:white;
+  padding:7px 12px;
+  border-radius:18px;
+  margin-left:5px;
+  cursor:pointer;
+}
+
+.hero{
+  background:
+  linear-gradient(rgba(0,35,75,.72),rgba(0,35,75,.72)),
+  url('https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:160px 20px;
+}
+
+.hero-logo{
+  width:150px;
+  border-radius:50%;
+  margin-bottom:25px;
+  box-shadow:0 4px 20px rgba(0,0,0,.35);
+}
+
+.hero h1{
+  font-size:54px;
+  margin:0 0 15px;
+}
+
+.hero p{
+  font-size:22px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.section{
+  background:white;
+  margin:28px 0;
+  padding:42px;
+  border-radius:14px;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  line-height:1.8;
+}
+
+.section h2{
+  text-align:center;
+  color:#003366;
+  margin-top:0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+}
+
+.box{
+  background:#f1f5f9;
+  padding:28px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.box h3{
+  color:#003366;
+}
+
+.timeline{
+  border-left:4px solid #003366;
+  padding-left:25px;
+  margin-top:25px;
+}
+
+.timeline-item{
+  margin-bottom:22px;
+}
+
+.founder{
+  text-align:center;
+}
+
+.founder-placeholder{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  background:#e5e7eb;
+  margin:0 auto 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#003366;
+  font-weight:bold;
+}
+
+footer{
+  background:#003366;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+.en,.fr{
+  display:none;
+}
+
+@media(max-width:900px){
+  nav{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+  }
+
+  .menu{
+    margin:12px 0;
+    text-align:center;
+  }
+
+  .menu a{
+    display:inline-block;
+    margin:6px;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero{
+    padding:100px 20px;
+  }
+}
 </style>
 </head>
 
@@ -29,14 +199,18 @@ footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:
 
 <nav>
 <div class="logo">
+<img src="logo.png" alt="Canada Jingzhou Chamber of Commerce Logo">
+<div class="logo-text">
 <span class="zh">加拿大荆州商会</span>
 <span class="en">Canada Jingzhou Chamber</span>
 <span class="fr">Chambre de Jingzhou</span>
+</div>
 </div>
 
 <div class="menu">
 <a href="#about"><span class="zh">关于商会</span><span class="en">About</span><span class="fr">À propos</span></a>
 <a href="#history"><span class="zh">商会历史</span><span class="en">History</span><span class="fr">Histoire</span></a>
+<a href="#founder"><span class="zh">创会会长</span><span class="en">Founder</span><span class="fr">Fondateur</span></a>
 <a href="#sister"><span class="zh">友好城市</span><span class="en">Sister City</span><span class="fr">Ville jumelée</span></a>
 <a href="#membership"><span class="zh">会员服务</span><span class="en">Membership</span><span class="fr">Adhésion</span></a>
 <a href="#news"><span class="zh">新闻活动</span><span class="en">News</span><span class="fr">Nouvelles</span></a>
@@ -51,6 +225,8 @@ footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:
 </nav>
 
 <section class="hero">
+<img src="logo.png" class="hero-logo" alt="Canada Jingzhou Chamber Logo">
+
 <h1 class="zh">加拿大荆州商会</h1>
 <h1 class="en">Canada Jingzhou Chamber of Commerce</h1>
 <h1 class="fr">Chambre de commerce de Jingzhou au Canada</h1>
@@ -77,11 +253,43 @@ footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:
 <h2 class="en">Our History</h2>
 <h2 class="fr">Notre histoire</h2>
 
-<p class="zh">2017年7月14日，加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。同日下午，加拿大荆州商会正式举行揭牌仪式。尼亚加拉大瀑布市市长 Jim Diodati 先生、荆州市归国华侨联合会党组书记兼主席张俊先生受聘为加拿大荆州商会永久荣誉会长，罗良志 Eric Luo 先生为创会会长。</p>
+<div class="timeline">
 
-<p class="en">On July 14, 2017, Niagara Falls, Ontario, Canada and Jingzhou, Hubei, China formally established a sister-city relationship. On the same afternoon, the Canada Jingzhou Chamber of Commerce was officially inaugurated. Mayor Jim Diodati and Mr. Zhang Jun were appointed Permanent Honorary Presidents, and Mr. Eric Luo became the Founding President.</p>
+<div class="timeline-item">
+<p class="zh"><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。这是荆州市与加拿大城市首次签署友好城市关系。</p>
+<p class="en"><strong>July 14, 2017:</strong> Niagara Falls, Ontario, Canada and Jingzhou, Hubei, China formally established a sister-city relationship, marking Jingzhou’s first sister-city agreement with a Canadian city.</p>
+<p class="fr"><strong>14 juillet 2017 :</strong> Niagara Falls, en Ontario, et Jingzhou, dans le Hubei, ont officiellement établi une relation de villes jumelées.</p>
+</div>
 
-<p class="fr">Le 14 juillet 2017, Niagara Falls, en Ontario, et Jingzhou, dans le Hubei, ont officiellement établi une relation de villes jumelées. Le même jour, la Chambre de commerce de Jingzhou au Canada a été officiellement inaugurée.</p>
+<div class="timeline-item">
+<p class="zh"><strong>同日下午：</strong>加拿大荆州商会正式举行揭牌仪式。尼亚加拉大瀑布市市长 Jim Diodati 先生、荆州市归国华侨联合会党组书记兼主席张俊先生受聘为加拿大荆州商会永久荣誉会长。</p>
+<p class="en"><strong>Same afternoon:</strong> The Canada Jingzhou Chamber of Commerce was officially inaugurated. Mayor Jim Diodati and Mr. Zhang Jun were appointed Permanent Honorary Presidents.</p>
+<p class="fr"><strong>Le même après-midi :</strong> La Chambre de commerce de Jingzhou au Canada a été officiellement inaugurée.</p>
+</div>
+
+<div class="timeline-item">
+<p class="zh"><strong>创会：</strong>罗良志 Eric Luo 先生担任加拿大荆州商会创会会长，推动荆州与加拿大之间长期、友好、互惠的交流合作。</p>
+<p class="en"><strong>Founding:</strong> Mr. Eric Luo became the Founding President, helping build a long-term, friendly, and mutually beneficial platform between Jingzhou and Canada.</p>
+<p class="fr"><strong>Fondation :</strong> M. Eric Luo est devenu président fondateur de la Chambre.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="founder">
+<h2 class="zh">创会会长</h2>
+<h2 class="en">Founding President</h2>
+<h2 class="fr">Président fondateur</h2>
+
+<div class="founder">
+<div class="founder-placeholder">Eric Luo</div>
+
+<h3>罗良志 Eric Luo</h3>
+
+<p class="zh">罗良志先生为加拿大荆州商会创会会长，长期致力于推动加拿大与荆州之间的经贸合作、投资交流及友城发展，并积极搭建中加企业家交流平台。</p>
+<p class="en">Mr. Eric Luo is the Founding President of the Canada Jingzhou Chamber of Commerce. He has long supported business cooperation, investment exchange, and sister-city development between Jingzhou and Canada.</p>
+<p class="fr">M. Eric Luo est le président fondateur de la Chambre de commerce de Jingzhou au Canada. Il soutient depuis longtemps la coopération économique entre Jingzhou et le Canada.</p>
+</div>
 </section>
 
 <section class="section" id="sister">
@@ -134,9 +342,9 @@ footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:
 
 <script>
 function showLang(lang){
-document.querySelectorAll('.zh,.en,.fr').forEach(el=>el.style.display='none');
-document.querySelectorAll('.'+lang).forEach(el=>el.style.display='inline');
-document.querySelectorAll('p.'+lang+', h1.'+lang+', h2.'+lang+', h3.'+lang).forEach(el=>el.style.display='block');
+  document.querySelectorAll('.zh,.en,.fr').forEach(el=>el.style.display='none');
+  document.querySelectorAll('.'+lang).forEach(el=>el.style.display='inline');
+  document.querySelectorAll('p.'+lang+', h1.'+lang+', h2.'+lang+', h3.'+lang).forEach(el=>el.style.display='block');
 }
 </script>
 
