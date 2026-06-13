@@ -3,207 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>加拿大荆州商会 | Canada Jingzhou Chamber
-  of Commerce</title>
+<title>加拿大荆州商会 | Canada Jingzhou Chamber of Commerce</title>
 
 <style>
-body{
-  margin:0;
-  font-family:Arial,"Microsoft YaHei",sans-serif;
-  background:#f6f6f6;
-  color:#222;
-}
-
-nav{
-  min-height:78px;
-  background:white;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 6%;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-  position:sticky;
-  top:0;
-  z-index:10;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  color:#003366;
-  font-weight:bold;
-}
-
-.logo img{
-  height:58px;
-  margin-right:12px;
-}
-
-.logo-text{
-  line-height:1.2;
-}
-
-.menu a{
-  margin:0 10px;
-  text-decoration:none;
-  color:#222;
-  font-weight:500;
-}
-
-.menu a:hover{
-  color:#003366;
-}
-
-.lang button{
-  border:0;
-  background:#003366;
-  color:white;
-  padding:7px 12px;
-  border-radius:18px;
-  margin-left:5px;
-  cursor:pointer;
-}
+body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:#f6f6f6;color:#222}
+nav{min-height:78px;background:white;display:flex;align-items:center;justify-content:space-between;padding:0 6%;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+.logo{display:flex;align-items:center;color:#003366;font-weight:bold}
+.logo img{height:58px;margin-right:12px}
+.logo-text{line-height:1.2}
+.menu a{margin:0 10px;text-decoration:none;color:#222;font-weight:500}
+.menu a:hover{color:#003366}
+.lang button{border:0;background:#003366;color:white;padding:7px 12px;border-radius:18px;margin-left:5px;cursor:pointer}
 
 .hero{
-  background:
-  linear-gradient(
-    rgba(0,35,75,.18),
-    rgba(0,35,75,.18)
-  ),
- url('ChatGPT Image Jun 13, 2026, 01_21_26 AM.png');
-
+  background:url('ChatGPT Image Jun 13, 2026, 01_21_26 AM.png');
   background-size:cover;
   background-position:center center;
   background-repeat:no-repeat;
-
-  color:white;
-  text-align:center;
-
-  min-height:700px;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
-  padding:40px 20px;
+  min-height:720px;
 }
 
-.hero h1{
-  font-size:72px;
-  margin:0 0 22px;
-  font-weight:800;
-  text-shadow:0 4px 14px rgba(0,0,0,.45);
-}
-  
-.hero p{
-  font-size:28px;
-  max-width:1050px;
-  line-height:1.6;
-  text-shadow:0 3px 10px rgba(0,0,0,.45);
-}
-  
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:50px 20px;
-}
-
-.section{
-  background:white;
-  margin:28px 0;
-  padding:42px;
-  border-radius:14px;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
-  line-height:1.8;
-}
-
-.section h2{
-  text-align:center;
-  color:#003366;
-  margin-top:0;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
-}
-
-.box{
-  background:#f1f5f9;
-  padding:28px;
-  border-radius:12px;
-  text-align:center;
-}
-
-.box h3{
-  color:#003366;
-}
-
-.timeline{
-  border-left:4px solid #003366;
-  padding-left:25px;
-  margin-top:25px;
-}
-
-.timeline-item{
-  margin-bottom:22px;
-}
-
-.founder{
-  text-align:center;
-}
-
-.founder-placeholder{
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  background:#e5e7eb;
-  margin:0 auto 20px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#003366;
-  font-weight:bold;
-}
-
-footer{
-  background:#003366;
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:40px;
-}
-
-.en,.fr{
-  display:none;
-}
+.container{max-width:1100px;margin:auto;padding:50px 20px}
+.section{background:white;margin:28px 0;padding:42px;border-radius:14px;box-shadow:0 3px 12px rgba(0,0,0,.08);line-height:1.8}
+.section h2{text-align:center;color:#003366;margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.box{background:#f1f5f9;padding:28px;border-radius:12px;text-align:center}
+.box h3{color:#003366}
+.timeline{border-left:4px solid #003366;padding-left:25px;margin-top:25px}
+.timeline-item{margin-bottom:22px}
+.founder{text-align:center}
+.founder-placeholder{width:160px;height:160px;border-radius:50%;background:#e5e7eb;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;color:#003366;font-weight:bold}
+footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:40px}
+.en,.fr{display:none}
 
 @media(max-width:900px){
-  nav{
-    flex-direction:column;
-    height:auto;
-    padding:15px;
-  }
-
-  .menu{
-    margin:12px 0;
-    text-align:center;
-  }
-
-  .menu a{
-    display:inline-block;
-    margin:6px;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }  
-
-  .hero{
-    padding:100px 20px;
-  }
+  nav{flex-direction:column;height:auto;padding:15px}
+  .menu{margin:12px 0;text-align:center}
+  .menu a{display:inline-block;margin:6px}
+  .hero{min-height:360px;background-size:cover;background-position:center}
 }
 </style>
 </head>
@@ -237,15 +74,7 @@ footer{
 </div>
 </nav>
 
-
-<h1 class="zh">加拿大荆州商会</h1>
-<h1 class="en">Canada Jingzhou Chamber of Commerce</h1>
-<h1 class="fr">Chambre de commerce de Jingzhou au Canada</h1>
-
-<p class="zh">连接荆州与加拿大，促进商务合作、文化交流与社区发展</p>
-<p class="en">Connecting Jingzhou and Canada through business, culture, and community.</p>
-<p class="fr">Favoriser la coopération commerciale, culturelle et communautaire entre Jingzhou et le Canada.</p>
-</section>
+<section class="hero"></section>
 
 <div class="container">
 
@@ -253,7 +82,6 @@ footer{
 <h2 class="zh">关于商会</h2>
 <h2 class="en">About Us</h2>
 <h2 class="fr">À propos de nous</h2>
-
 <p class="zh">加拿大荆州商会致力于促进荆州与加拿大之间的经贸合作、投资交流、文化往来及社区建设，为企业家、专业人士和社区成员搭建高效、友好、互惠的交流平台。</p>
 <p class="en">The Canada Jingzhou Chamber of Commerce promotes business cooperation, investment opportunities, cultural exchange, and community development between Jingzhou and Canada.</p>
 <p class="fr">La Chambre de commerce de Jingzhou au Canada favorise la coopération économique, les possibilités d’investissement, les échanges culturels et le développement communautaire entre Jingzhou et le Canada.</p>
@@ -265,7 +93,6 @@ footer{
 <h2 class="fr">Notre histoire</h2>
 
 <div class="timeline">
-
 <div class="timeline-item">
 <p class="zh"><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。这是荆州市与加拿大城市首次签署友好城市关系。</p>
 <p class="en"><strong>July 14, 2017:</strong> Niagara Falls, Ontario, Canada and Jingzhou, Hubei, China formally established a sister-city relationship, marking Jingzhou’s first sister-city agreement with a Canadian city.</p>
@@ -283,7 +110,6 @@ footer{
 <p class="en"><strong>Founding:</strong> Mr. Eric Luo became the Founding President, helping build a long-term, friendly, and mutually beneficial platform between Jingzhou and Canada.</p>
 <p class="fr"><strong>Fondation :</strong> M. Eric Luo est devenu président fondateur de la Chambre.</p>
 </div>
-
 </div>
 </section>
 
@@ -291,12 +117,9 @@ footer{
 <h2 class="zh">创会会长</h2>
 <h2 class="en">Founding President</h2>
 <h2 class="fr">Président fondateur</h2>
-
 <div class="founder">
 <div class="founder-placeholder">Eric Luo</div>
-
 <h3>罗良志 Eric Luo</h3>
-
 <p class="zh">罗良志先生为加拿大荆州商会创会会长，长期致力于推动加拿大与荆州之间的经贸合作、投资交流及友城发展，并积极搭建中加企业家交流平台。</p>
 <p class="en">Mr. Eric Luo is the Founding President of the Canada Jingzhou Chamber of Commerce. He has long supported business cooperation, investment exchange, and sister-city development between Jingzhou and Canada.</p>
 <p class="fr">M. Eric Luo est le président fondateur de la Chambre de commerce de Jingzhou au Canada. Il soutient depuis longtemps la coopération économique entre Jingzhou et le Canada.</p>
@@ -307,7 +130,6 @@ footer{
 <h2 class="zh">友好城市合作</h2>
 <h2 class="en">Sister-City Partnership</h2>
 <h2 class="fr">Partenariat de villes jumelées</h2>
-
 <p class="zh">荆州市与尼亚加拉大瀑布市在旅游文化、教育科技、农业、经贸合作等领域具有广阔合作空间。两座城市均拥有丰富的水资源、深厚的文化特色和重要的区域发展潜力。</p>
 <p class="en">Jingzhou and Niagara Falls share strong potential for cooperation in tourism, culture, education, technology, agriculture, trade, and investment.</p>
 <p class="fr">Jingzhou et Niagara Falls disposent d’un fort potentiel de coopération dans le tourisme, la culture, l’éducation, la technologie, l’agriculture, le commerce et l’investissement.</p>
@@ -317,7 +139,6 @@ footer{
 <h2 class="zh">会员服务</h2>
 <h2 class="en">Membership Services</h2>
 <h2 class="fr">Services aux membres</h2>
-
 <div class="grid">
 <div class="box"><h3 class="zh">商务对接</h3><h3 class="en">Business Networking</h3><h3 class="fr">Réseautage</h3></div>
 <div class="box"><h3 class="zh">投资交流</h3><h3 class="en">Investment Exchange</h3><h3 class="fr">Investissement</h3></div>
@@ -330,7 +151,6 @@ footer{
 <h2 class="zh">新闻和活动</h2>
 <h2 class="en">News & Events</h2>
 <h2 class="fr">Nouvelles et événements</h2>
-
 <p class="zh">更多商会活动、商务论坛、友城交流和会员新闻将陆续发布。</p>
 <p class="en">More chamber events, business forums, sister-city exchanges, and member news will be announced soon.</p>
 <p class="fr">D’autres événements, forums d’affaires et nouvelles des membres seront annoncés prochainement.</p>
@@ -340,7 +160,6 @@ footer{
 <h2 class="zh">联系我们</h2>
 <h2 class="en">Contact Us</h2>
 <h2 class="fr">Nous contacter</h2>
-
 <p>Email: info@jingzhoucanada.ca</p>
 <p>Website: canada-jingzhou-chamber.pages.dev</p>
 </section>
