@@ -65,33 +65,43 @@ nav{
 
 .hero{
   background:
-  linear-gradient(rgba(0,35,75,.72),rgba(0,35,75,.72)),
-  url('https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1800&q=80');
+  linear-gradient(
+    rgba(0,35,75,.18),
+    rgba(0,35,75,.18)
+  ),
+  url('Background.png');
+
   background-size:cover;
-  background-position:center;
+  background-position:center center;
+  background-repeat:no-repeat;
+
   color:white;
   text-align:center;
-  padding:160px 20px;
+
+  min-height:700px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  padding:40px 20px;
 }
 
-.hero-logo{
-  width:260px;
-  max-width:85%;
-  height:auto;
-  border-radius:0;
-  margin-bottom:30px;
-  box-shadow:none;
+.hero h1{
+  font-size:72px;
+  margin:0 0 22px;
+  font-weight:800;
+  text-shadow:0 4px 14px rgba(0,0,0,.45);
 }
   
-.hero h1{
-  font-size:54px;
-  margin:0 0 15px;
-}
-
 .hero p{
-  font-size:22px;
+  font-size:28px;
+  max-width:1050px;
+  line-height:1.6;
+  text-shadow:0 3px 10px rgba(0,0,0,.45);
 }
-
+  
 .container{
   max-width:1100px;
   margin:auto;
@@ -187,8 +197,8 @@ footer{
   }
 
   .hero h1{
-    font-size:36px;
-  }
+    font-size:42px;
+  }  
 
   .hero{
     padding:100px 20px;
