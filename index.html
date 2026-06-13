@@ -1,40 +1,142 @@
-<section class="section">
-<h2>关于商会</h2>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>加拿大荆州商会 | Canada Jingzhou Chamber of Commerce</title>
+
+<style>
+body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:#f6f6f6;color:#222}
+html{scroll-behavior:smooth}
+nav{min-height:78px;background:white;display:flex;align-items:center;justify-content:space-between;padding:0 6%;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+.logo{display:flex;align-items:center;color:#003366;font-weight:bold}
+.logo img{height:58px;margin-right:12px}
+.menu a{margin:0 10px;text-decoration:none;color:#222;font-weight:600}
+.menu a:hover{color:#003366}
+.lang button{border:0;background:#003366;color:white;padding:8px 14px;border-radius:20px;margin-left:6px;cursor:pointer;font-weight:bold}
+.hero{background:url("ChatGPT Image Jun 13, 2026, 01_21_26 AM.png");background-size:cover;background-position:center;background-repeat:no-repeat;min-height:720px}
+.container{max-width:1100px;margin:auto;padding:50px 20px}
+.section{background:white;margin:28px 0;padding:45px;border-radius:14px;box-shadow:0 3px 12px rgba(0,0,0,.08);line-height:1.9}
+.section h2{text-align:center;color:#003366;margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.box{background:#f1f5f9;padding:28px;border-radius:12px;text-align:center}
+.box h3{color:#003366}
+.timeline{border-left:4px solid #003366;padding-left:25px;margin-top:25px}
+.founder{text-align:center}
+.founder-placeholder{width:160px;height:160px;border-radius:50%;background:#e5e7eb;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;color:#003366;font-weight:bold}
+footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:40px}
+.en,.fr{display:none}
+
+@media(max-width:900px){
+nav{flex-direction:column;height:auto;padding:15px}
+.menu{text-align:center;margin:12px 0}
+.menu a{display:inline-block;margin:6px}
+.hero{min-height:360px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<img src="logo.png" alt="Logo">
+<span>加拿大荆州商会</span>
+</div>
+
+<div class="menu">
+<a href="#about">关于商会</a>
+<a href="#history">商会历史</a>
+<a href="#founder">理事会成员</a>
+<a href="#sister">友好城市</a>
+<a href="#membership">会员服务</a>
+<a href="#news">新闻活动</a>
+<a href="#contact">联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="hero"></section>
+
+<div class="container">
 
 <section class="section" id="about">
-
 <h2 class="zh">关于商会</h2>
 <h2 class="en">About Us</h2>
 <h2 class="fr">À propos de nous</h2>
 
-<p class="zh">
-加拿大荆州商会是加拿大具有影响力的华商组织之一，汇聚来自金融投资、国际贸易、科技创新、地产开发、制造业、法律、教育及专业服务等领域的优秀企业家和行业领袖。商会依托广泛的政商资源网络和深厚的中加合作基础，长期致力于推动荆州与加拿大在经贸投资、产业协作、科技创新、教育文化及友城交流等领域的高质量发展。
-<br><br>
-自成立以来，商会积极发挥桥梁纽带作用，与加拿大各级政府机构、工商组织、高等院校及社会团体保持良好合作关系，同时与中国湖北省及荆州市有关政府部门、商协会和企业建立了广泛而稳固的联系。商会通过举办高端商务论坛、投资推介会、企业考察、文化交流活动及国际合作项目，不断促进两地资源共享、优势互补与合作共赢。
-<br><br>
-面向未来，加拿大荆州商会将继续秉承“合作、交流、发展、共赢”的宗旨，以国际化视野、专业化服务和高层次资源整合能力，打造连接荆州与加拿大的重要合作平台，为会员创造价值，为区域经济发展赋能，为深化中加友好交流与经贸合作贡献力量。
-</p>
+<p class="zh">加拿大荆州商会是加拿大具有影响力的华商组织之一，汇聚来自金融投资、国际贸易、科技创新、地产开发、制造业、法律、教育及专业服务等领域的优秀企业家和行业领袖。商会依托广泛的政商资源网络和深厚的中加合作基础，长期致力于推动荆州与加拿大在经贸投资、产业协作、科技创新、教育文化及友城交流等领域的高质量发展。</p>
 
-<p class="en">
-The Canada Jingzhou Chamber of Commerce is one of the influential Chinese business organizations in Canada, bringing together outstanding entrepreneurs, investors, and industry leaders from finance, international trade, technology, real estate development, manufacturing, legal services, education, and professional sectors. Leveraging extensive governmental, commercial, and community networks, the Chamber is committed to advancing high-quality cooperation between Jingzhou and Canada in trade, investment, innovation, education, culture, and sister-city partnerships.
-<br><br>
-Since its establishment, the Chamber has served as an important bridge connecting businesses, institutions, and communities in both countries. Through strategic partnerships with government agencies, business associations, universities, and enterprises, the Chamber promotes resource sharing, investment opportunities, business networking, cultural exchange, and international collaboration.
-<br><br>
-Looking ahead, the Chamber will continue to uphold the principles of Cooperation, Exchange, Development, and Mutual Success. With a global outlook, professional services, and strong resource integration capabilities, the Chamber strives to create value for its members, support regional economic growth, and strengthen the long-term friendship and partnership between Canada and Jingzhou.
-</p>
+<p class="zh">自成立以来，商会积极发挥桥梁纽带作用，与加拿大各级政府机构、工商组织、高等院校及社会团体保持良好合作关系，同时与中国湖北省及荆州市有关政府部门、商协会和企业建立了广泛而稳固的联系。商会通过举办高端商务论坛、投资推介会、企业考察、文化交流活动及国际合作项目，不断促进两地资源共享、优势互补与合作共赢。</p>
 
+<p class="zh">面向未来，加拿大荆州商会将继续秉承“合作、交流、发展、共赢”的宗旨，以国际化视野、专业化服务和高层次资源整合能力，打造连接荆州与加拿大的重要合作平台，为会员创造价值，为区域经济发展赋能，为深化中加友好交流与经贸合作贡献力量。</p>
 
-<p style="text-align:center;margin-top:30px;">
-<a href="about.html"
-style="
-background:#003366;
-color:white;
-padding:12px 28px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;">
-了解更多
-</a>
-</p>
+<p class="en">The Canada Jingzhou Chamber of Commerce is one of the influential Chinese business organizations in Canada, bringing together entrepreneurs, investors, and industry leaders from finance, international trade, technology, real estate, manufacturing, legal services, education, and professional sectors.</p>
 
+<p class="fr">La Chambre de commerce de Jingzhou au Canada est une organisation d’affaires chinoise influente au Canada, réunissant des entrepreneurs, investisseurs et dirigeants de divers secteurs.</p>
 </section>
+
+<section class="section" id="history">
+<h2>商会历史</h2>
+<div class="timeline">
+<p><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。</p>
+<p><strong>同日下午：</strong>加拿大荆州商会正式举行揭牌仪式。</p>
+<p><strong>创会：</strong>罗良志 Eric Luo 先生担任加拿大荆州商会创会会长。</p>
+</div>
+</section>
+
+<section class="section" id="founder">
+<h2>理事会成员</h2>
+<div class="founder">
+<div class="founder-placeholder">Eric Luo</div>
+<h3>罗良志 Eric Luo</h3>
+<p>罗良志先生为加拿大荆州商会创会会长、财富人生集团创始人兼董事长、财富人生财富管理有限公司创始人及首席执行官。作为旅居加拿大多年的杰出华人企业家和金融行业领军人物，罗先生长期致力于推动中加经贸合作、跨境投资交流及华人社区发展。</p>
+</div>
+</section>
+
+<section class="section" id="sister">
+<h2>友好城市合作</h2>
+<p>荆州市与尼亚加拉大瀑布市在旅游文化、教育科技、农业、经贸合作等领域具有广阔合作空间。</p>
+</section>
+
+<section class="section" id="membership">
+<h2>会员服务</h2>
+<div class="grid">
+<div class="box"><h3>商务对接</h3></div>
+<div class="box"><h3>投资交流</h3></div>
+<div class="box"><h3>文化活动</h3></div>
+<div class="box"><h3>政府联络</h3></div>
+</div>
+</section>
+
+<section class="section" id="news">
+<h2>新闻和活动</h2>
+<p>更多商会活动、商务论坛、友城交流和会员新闻将陆续发布。</p>
+</section>
+
+<section class="section" id="contact">
+<h2>联系我们</h2>
+<p>Email: info@jingzhoucanada.ca</p>
+<p>Website: canada-jingzhou-chamber.pages.dev</p>
+</section>
+
+</div>
+
+<footer>
+© 2026 Canada Jingzhou Chamber of Commerce
+</footer>
+
+<script>
+function showLang(lang){
+document.querySelectorAll('.zh,.en,.fr').forEach(el=>el.style.display='none');
+document.querySelectorAll('.'+lang).forEach(el=>el.style.display='block');
+}
+</script>
+
+</body>
+</html>
