@@ -6,133 +6,65 @@
 <title>Canada Jingzhou Chamber of Commerce</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f5f5;
-    text-align:center;
-}
-
-.lang-switch{
-    position:absolute;
-    top:20px;
-    left:20px;
-}
-
-.lang-switch button{
-    padding:8px 15px;
-    border:1px solid white;
-    background:transparent;
-    color:white;
-    border-radius:20px;
-    cursor:pointer;
-}
-
-header{
-    background:#003366;
-    color:white;
-    padding:80px 20px;
-}
-
-h1{
-    margin:0;
-    font-size:48px;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.card{
-    background:white;
-    margin:25px 0;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-h2{
-    color:#003366;
-}
-
-footer{
-    background:#003366;
-    color:white;
-    padding:20px;
-    margin-top:40px;
-}
-
-.en{
-    display:none;
-}
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;text-align:center}
+.lang-switch{position:absolute;top:20px;left:20px}
+.lang-switch button{padding:8px 14px;border:1px solid white;background:transparent;color:white;border-radius:20px;cursor:pointer;margin-right:5px}
+header{background:#003366;color:white;padding:80px 20px}
+h1{margin:0;font-size:48px}
+.container{max-width:1000px;margin:auto;padding:40px 20px}
+.card{background:white;margin:25px 0;padding:35px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+h2{color:#003366}
+footer{background:#003366;color:white;padding:20px;margin-top:40px}
+.en,.fr{display:none}
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="lang-switch">
-<button onclick="toggleLang()">中文 / EN</button>
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
 </div>
 
 <h1 class="zh">加拿大荆州商会</h1>
 <h1 class="en">Canada Jingzhou Chamber of Commerce</h1>
+<h1 class="fr">Chambre de commerce de Jingzhou au Canada</h1>
 
-<p class="zh">
-连接荆州与加拿大，促进商务合作、文化交流与社区发展
-</p>
-
-<p class="en">
-Connecting Jingzhou and Canada through business, cultural exchange and community development.
-</p>
-
+<p class="zh">连接荆州与加拿大，促进商务合作、文化交流与社区发展</p>
+<p class="en">Connecting Jingzhou and Canada through business, cultural exchange and community development.</p>
+<p class="fr">Favoriser la coopération commerciale, les échanges culturels et le développement communautaire entre Jingzhou et le Canada.</p>
 </header>
 
 <div class="container">
 
 <div class="card">
-
 <h2 class="zh">关于商会</h2>
 <h2 class="en">About Us</h2>
+<h2 class="fr">À propos de nous</h2>
 
-<p class="zh">
-加拿大荆州商会致力于促进荆州与加拿大之间的经贸合作、投资交流、文化往来及社区建设，
-为企业家、专业人士和社区成员搭建合作平台。
-</p>
-
-<p class="en">
-The Canada Jingzhou Chamber of Commerce promotes business cooperation, investment opportunities,
-cultural exchange, and community development between Jingzhou and Canada.
-</p>
-
+<p class="zh">加拿大荆州商会致力于促进荆州与加拿大之间的经贸合作、投资交流、文化往来及社区建设，为企业家、专业人士和社区成员搭建合作平台。</p>
+<p class="en">The Canada Jingzhou Chamber of Commerce promotes business cooperation, investment opportunities, cultural exchange, and community development between Jingzhou and Canada.</p>
+<p class="fr">La Chambre de commerce de Jingzhou au Canada favorise la coopération économique, les possibilités d’investissement, les échanges culturels et le développement communautaire entre Jingzhou et le Canada.</p>
 </div>
 
 <div class="card">
-
 <h2 class="zh">会员服务</h2>
 <h2 class="en">Membership</h2>
+<h2 class="fr">Adhésion</h2>
 
-<p class="zh">
-欢迎企业家、专业人士、留学生及社区成员加入商会，共同推动中加合作与发展。
-</p>
-
-<p class="en">
-Entrepreneurs, professionals, students, and community members are welcome to join the Chamber and support Canada-China cooperation.
-</p>
-
+<p class="zh">欢迎企业家、专业人士、留学生及社区成员加入商会，共同推动中加合作与发展。</p>
+<p class="en">Entrepreneurs, professionals, students, and community members are welcome to join the Chamber and support Canada-China cooperation.</p>
+<p class="fr">Les entrepreneurs, professionnels, étudiants et membres de la communauté sont invités à rejoindre la Chambre et à soutenir la coopération entre le Canada et la Chine.</p>
 </div>
 
 <div class="card">
-
 <h2 class="zh">联系我们</h2>
 <h2 class="en">Contact Us</h2>
+<h2 class="fr">Nous contacter</h2>
 
 <p>Email: info@jingzhoucanada.ca</p>
-
 </div>
 
 </div>
@@ -142,31 +74,14 @@ Entrepreneurs, professionals, students, and community members are welcome to joi
 </footer>
 
 <script>
-function toggleLang() {
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){
+    el.style.display = 'none';
+  });
 
-const zh = document.querySelectorAll(".zh");
-const en = document.querySelectorAll(".en");
-
-zh.forEach(function(item) {
-
-if(item.style.display === "none"){
-item.style.display = "block";
-}else{
-item.style.display = "none";
-}
-
-});
-
-en.forEach(function(item) {
-
-if(item.style.display === "block"){
-item.style.display = "none";
-}else{
-item.style.display = "block";
-}
-
-});
-
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    el.style.display = 'block';
+  });
 }
 </script>
 
