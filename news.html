@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新闻活动 | 加拿大荆州商会</title>
+<title>新闻活动 | Canada Jingzhou Chamber of Commerce</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
@@ -35,41 +36,66 @@
 </div>
 </nav>
 
-<section class="page-hero"><h1>新闻活动</h1></section>
+<section class="page-hero">
+<h1 class="zh">新闻活动</h1>
+<h1 class="en">News & Events</h1>
+<h1 class="fr">Actualités et Événements</h1>
+</section>
+
 <div class="container">
 
 <section class="section">
-<h2>新闻活动</h2>
+
+<h2 class="zh">新闻活动</h2>
+<h2 class="en">News & Events</h2>
+<h2 class="fr">Actualités et Événements</h2>
+
 <div class="news-grid">
-<div class="news-card"><img src="logo.png"><div><h3>加拿大荆州商会正式成立</h3><p>2017-07-14</p></div></div>
-<div class="news-card"><img src="logo.png"><div><h3>荆州与尼亚加拉大瀑布市缔结友好城市</h3><p>2017-07-14</p></div></div>
-<div class="news-card"><img src="logo.png"><div><h3>商会活动陆续发布</h3><p>Coming Soon</p></div></div>
+
+<div class="news-card">
+<img src="logo.png" alt="">
+<h3 class="zh">加拿大荆州商会正式成立</h3>
+<h3 class="en">Canada Jingzhou Chamber Officially Established</h3>
+<h3 class="fr">Fondation officielle de la Chambre de Jingzhou au Canada</h3>
+<p>2017-07-14</p>
 </div>
+
+<div class="news-card">
+<img src="logo.png" alt="">
+<h3 class="zh">荆州与尼亚加拉大瀑布市缔结友好城市</h3>
+<h3 class="en">Jingzhou and Niagara Falls Became Sister Cities</h3>
+<h3 class="fr">Jingzhou et Niagara Falls deviennent villes jumelées</h3>
+<p>2017-07-14</p>
+</div>
+
+</div>
+
 </section>
 
 </div>
-<footer>© 2017 Canada Jingzhou Chamber of Commerce</footer>
+
+<footer>© Canada Jingzhou Chamber of Commerce</footer>
 
 <script>
 function showLang(lang){
-  localStorage.setItem('siteLang', lang);
+localStorage.setItem('siteLang',lang);
 
-  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){
-    el.style.display='none';
-  });
+document.querySelectorAll('.zh,.en,.fr').forEach(function(el){
+el.style.display='none';
+});
 
-  document.querySelectorAll('.' + lang).forEach(function(el){
-    if(el.tagName === 'SPAN'){
-      el.style.display='inline';
-    }else{
-      el.style.display='block';
-    }
-  });
+document.querySelectorAll('.'+lang).forEach(function(el){
+if(el.tagName==='SPAN'){
+el.style.display='inline';
+}else{
+el.styledisplay='block';
+el.style.display='block';
+}
+});
 }
 
 window.onload=function(){
-  var savedLang = localStorage.getItem('siteLang') || 'zh';
-  showLang(savedLang);
+showLang(localStorage.getItem('siteLang') || 'zh');
 }
 </script>
 
