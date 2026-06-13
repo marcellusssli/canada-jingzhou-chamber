@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>理事会成员 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" >关于商会</a>
+<a href="history.html" >商会历史</a>
+<a href="board.html" class="active">理事会成员</a>
+<a href="sister-city.html" >友好城市</a>
+<a href="members.html" >会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" >联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>理事会成员</h1></section>
+<div class="container">
+
+<section class="section">
+<h2 class="zh">理事会成员</h2><h2 class="en">Board Members</h2><h2 class="fr">Membres du Conseil</h2>
+<div class="board-member">
+<div class="board-photo">Eric Luo</div>
+<h3 class="zh">罗良志 Eric Luo</h3>
+<h3 class="en">Eric Luo</h3>
+<h3 class="fr">Eric Luo</h3>
+<p class="zh">罗良志先生为加拿大荆州商会创会会长、财富人生集团创始人兼董事长、财富人生财富管理有限公司创始人及首席执行官。作为旅居加拿大多年的杰出华人企业家和金融行业领军人物，罗先生长期致力于推动中加经贸合作、跨境投资交流及华人社区发展。</p>
+<p class="en">Eric Luo is the Founding President of the Canada Jingzhou Chamber of Commerce, Founder and Chairman of Happy Life Group, and CEO of Happy Life Wealth Management Inc. He has long been committed to promoting Canada-China business cooperation, cross-border investment, and community development.</p>
+<p class="fr">Eric Luo est le président fondateur de la Chambre de commerce de Jingzhou au Canada, fondateur et président du Groupe Happy Life ainsi que directeur général de Happy Life Wealth Management Inc.</p>
+</div>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>

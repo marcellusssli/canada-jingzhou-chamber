@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商会历史 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" >关于商会</a>
+<a href="history.html" class="active">商会历史</a>
+<a href="board.html" >理事会成员</a>
+<a href="sister-city.html" >友好城市</a>
+<a href="members.html" >会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" >联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>商会历史</h1></section>
+<div class="container">
+
+<section class="section">
+<h2>商会历史</h2>
+<div class="timeline">
+<p><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。这是荆州市与加拿大城市首次签署友好城市关系。</p>
+<p><strong>同日下午：</strong>加拿大荆州商会正式举行揭牌仪式。尼亚加拉大瀑布市市长 Jim Diodati 先生、荆州市归国华侨联合会党组书记兼主席张俊先生受聘为加拿大荆州商会永久荣誉会长。</p>
+<p><strong>创会：</strong>罗良志 Eric Luo 先生担任加拿大荆州商会创会会长，推动荆州与加拿大之间长期、友好、互惠的交流合作。</p>
+</div>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>

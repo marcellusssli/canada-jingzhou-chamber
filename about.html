@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于商会 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" class="active">关于商会</a>
+<a href="history.html" >商会历史</a>
+<a href="board.html" >理事会成员</a>
+<a href="sister-city.html" >友好城市</a>
+<a href="members.html" >会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" >联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>关于商会</h1></section>
+<div class="container">
+
+<section class="section">
+<h2 class="zh">关于商会</h2><h2 class="en">About Us</h2><h2 class="fr">À propos de nous</h2>
+<p class="zh">加拿大荆州商会是加拿大具有影响力的华商组织之一，汇聚来自金融投资、国际贸易、科技创新、地产开发、制造业、法律、教育及专业服务等领域的优秀企业家和行业领袖。商会依托广泛的政商资源网络和深厚的中加合作基础，长期致力于推动荆州与加拿大在经贸投资、产业协作、科技创新、教育文化及友城交流等领域的高质量发展。</p>
+<p class="zh">自成立以来，商会积极发挥桥梁纽带作用，与加拿大各级政府机构、工商组织、高等院校及社会团体保持良好合作关系，同时与中国湖北省及荆州市有关政府部门、商协会和企业建立了广泛而稳固的联系。商会通过举办高端商务论坛、投资推介会、企业考察、文化交流活动及国际合作项目，不断促进两地资源共享、优势互补与合作共赢。</p>
+<p class="zh">面向未来，加拿大荆州商会将继续秉承“合作、交流、发展、共赢”的宗旨，以国际化视野、专业化服务和高层次资源整合能力，打造连接荆州与加拿大的重要合作平台，为会员创造价值，为区域经济发展赋能，为深化中加友好交流与经贸合作贡献力量。</p>
+
+<p class="en">The Canada Jingzhou Chamber of Commerce is one of the influential Chinese business organizations in Canada, bringing together entrepreneurs, investors, and industry leaders from finance, international trade, technology, real estate development, manufacturing, legal services, education, and professional sectors.</p>
+<p class="en">Since its establishment, the Chamber has served as an important bridge between Jingzhou and Canada, maintaining strong connections with governments, business organizations, universities, community groups, and enterprises in both countries.</p>
+<p class="en">Looking ahead, the Chamber will continue to uphold cooperation, exchange, development, and mutual success while creating value for members and strengthening Canada-Jingzhou cooperation.</p>
+
+<p class="fr">La Chambre de commerce de Jingzhou au Canada est une organisation d’affaires chinoise influente au Canada, réunissant des entrepreneurs, investisseurs et dirigeants de divers secteurs.</p>
+<p class="fr">Depuis sa création, la Chambre joue un rôle de pont entre Jingzhou et le Canada et entretient des liens solides avec les institutions, entreprises et communautés des deux pays.</p>
+<p class="fr">À l’avenir, la Chambre continuera de promouvoir la coopération, les échanges, le développement et le succès mutuel.</p>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>

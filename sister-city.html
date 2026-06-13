@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友好城市 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" >关于商会</a>
+<a href="history.html" >商会历史</a>
+<a href="board.html" >理事会成员</a>
+<a href="sister-city.html" class="active">友好城市</a>
+<a href="members.html" >会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" >联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>友好城市</h1></section>
+<div class="container">
+
+<section class="section">
+<h2>友好城市合作</h2>
+<p>2017年7月14日，加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。双方在旅游文化、教育科技、农业、经贸合作等领域具有广阔合作空间。</p>
+<p>荆州作为历史文化名城，拥有深厚的三国文化底蕴和长江经济带区位优势；尼亚加拉大瀑布市作为加拿大著名旅游城市，在旅游、服务业和国际交流方面具有独特优势。两地合作将为中加民间交流和区域经济发展带来更多机遇。</p>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>

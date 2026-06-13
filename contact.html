@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" >关于商会</a>
+<a href="history.html" >商会历史</a>
+<a href="board.html" >理事会成员</a>
+<a href="sister-city.html" >友好城市</a>
+<a href="members.html" >会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" class="active">联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>联系我们</h1></section>
+<div class="container">
+
+<section class="section">
+<h2>联系我们</h2>
+<p><strong>Email:</strong> info@jingzhoucanada.ca</p>
+<p><strong>Website:</strong> canada-jingzhou-chamber.pages.dev</p>
+<p>欢迎企业家、专业人士、社区成员及合作机构与加拿大荆州商会联系，共同推动荆州与加拿大之间的合作交流。</p>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>

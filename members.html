@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会员服务 | 加拿大荆州商会</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png" alt="Logo">
+<div class="logo-text">
+<span class="zh">加拿大荆州商会</span>
+<span class="en">Canada Jingzhou Chamber</span>
+<span class="fr">Chambre de Jingzhou</span>
+</div>
+</a>
+
+<div class="menu">
+<a href="about.html" >关于商会</a>
+<a href="history.html" >商会历史</a>
+<a href="board.html" >理事会成员</a>
+<a href="sister-city.html" >友好城市</a>
+<a href="members.html" class="active">会员服务</a>
+<a href="news.html" >新闻活动</a>
+<a href="contact.html" >联系我们</a>
+</div>
+
+<div class="lang">
+<button onclick="showLang('zh')">中文</button>
+<button onclick="showLang('en')">EN</button>
+<button onclick="showLang('fr')">FR</button>
+</div>
+</nav>
+
+<section class="page-hero"><h1>会员服务</h1></section>
+<div class="container">
+
+<section class="section">
+<h2>会员服务</h2>
+<div class="grid">
+<div class="box"><h3>商务对接</h3><p>为会员企业搭建中加商务合作与项目对接平台。</p></div>
+<div class="box"><h3>投资交流</h3><p>组织投资推介、企业考察和产业合作交流活动。</p></div>
+<div class="box"><h3>文化活动</h3><p>推动文化、教育、社区及民间友好交流。</p></div>
+<div class="box"><h3>政府联络</h3><p>加强与政府机构、工商组织和社会团体的合作联系。</p></div>
+</div>
+</section>
+
+</div>
+<footer>© 2026 Canada Jingzhou Chamber of Commerce</footer>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('.' + lang).forEach(function(el){
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
+  });
+}
+window.onload=function(){showLang('zh');}
+</script>
+
+</body>
+</html>
