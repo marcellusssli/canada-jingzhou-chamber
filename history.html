@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商会历史 | 加拿大荆州商会</title>
+<title>商会历史 | Canada Jingzhou Chamber of Commerce</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
@@ -35,38 +36,51 @@
 </div>
 </nav>
 
-<section class="page-hero"><h1>商会历史</h1></section>
+<section class="page-hero">
+<h1 class="zh">商会历史</h1>
+<h1 class="en">History</h1>
+<h1 class="fr">Histoire</h1>
+</section>
+
 <div class="container">
 
 <section class="section">
-<h2>商会历史</h2>
+
+<h2 class="zh">商会历史</h2>
+<h2 class="en">Our History</h2>
+<h2 class="fr">Notre histoire</h2>
+
 <div class="timeline">
-<p><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。这是荆州市与加拿大城市首次签署友好城市关系。</p>
-<p><strong>同日下午：</strong>加拿大荆州商会正式举行揭牌仪式。尼亚加拉大瀑布市市长 Jim Diodati 先生、荆州市归国华侨联合会党组书记兼主席张俊先生受聘为加拿大荆州商会永久荣誉会长。</p>
-<p><strong>创会：</strong>罗良志 Eric Luo 先生担任加拿大荆州商会创会会长，推动荆州与加拿大之间长期、友好、互惠的交流合作。</p>
+
+<p class="zh"><strong>2017年7月14日：</strong>加拿大安大略省尼亚加拉大瀑布市与中国湖北省荆州市正式缔结为友好城市。这是荆州市与加拿大城市首次签署友好城市关系。</p>
+<p class="en"><strong>July 14, 2017:</strong> Niagara Falls, Ontario, Canada and Jingzhou, Hubei, China formally established a sister-city relationship, marking Jingzhou’s first sister-city agreement with a Canadian city.</p>
+<p class="fr"><strong>14 juillet 2017 :</strong> Niagara Falls, en Ontario, et Jingzhou, dans le Hubei, ont officiellement établi une relation de villes jumelées.</p>
+
+<p class="zh"><strong>同日下午：</strong>加拿大荆州商会正式举行揭牌仪式。尼亚加拉大瀑布市市长 Jim Diodati 先生、荆州市归国华侨联合会党组书记兼主席张俊先生受聘为加拿大荆州商会永久荣誉会长。</p>
+<p class="en"><strong>Same afternoon:</strong> The Canada Jingzhou Chamber of Commerce was officially inaugurated. Mayor Jim Diodati and Mr. Zhang Jun were appointed Permanent Honorary Presidents of the Chamber.</p>
+<p class="fr"><strong>Le même après-midi :</strong> La Chambre de commerce de Jingzhou au Canada a été officiellement inaugurée. Le maire Jim Diodati et M. Zhang Jun ont été nommés présidents honoraires permanents.</p>
+
+<p class="zh"><strong>创会：</strong>罗良志 Eric Luo 先生担任加拿大荆州商会创会会长，推动荆州与加拿大之间长期、友好、互惠的交流合作。</p>
+<p class="en"><strong>Founding:</strong> Mr. Eric Luo became the Founding President of the Chamber, helping build a long-term, friendly, and mutually beneficial platform between Jingzhou and Canada.</p>
+<p class="fr"><strong>Fondation :</strong> M. Eric Luo est devenu président fondateur de la Chambre, contribuant à créer une plateforme durable de coopération entre Jingzhou et le Canada.</p>
+
 </div>
+
 </section>
 
 </div>
-<footer>© 2017 Canada Jingzhou Chamber of Commerce</footer>
+
+<footer>© Canada Jingzhou Chamber of Commerce</footer>
 
 <script>
 function showLang(lang){
   localStorage.setItem('siteLang', lang);
-
-  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){
-    el.style.display='none';
-  });
-
+  document.querySelectorAll('.zh,.en,.fr').forEach(function(el){el.style.display='none';});
   document.querySelectorAll('.' + lang).forEach(function(el){
-    if(el.tagName === 'SPAN'){
-      el.style.display='inline';
-    }else{
-      el.style.display='block';
-    }
+    if(el.tagName === 'SPAN'){el.style.display='inline';}
+    else{el.style.display='block';}
   });
 }
-
 window.onload=function(){
   var savedLang = localStorage.getItem('siteLang') || 'zh';
   showLang(savedLang);
