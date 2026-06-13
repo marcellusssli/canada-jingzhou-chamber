@@ -16,3 +16,14 @@ footer{background:#003366;color:white;text-align:center;padding:25px;margin-top:
 .card{background:white;padding:30px;border-radius:14px;box-shadow:0 3px 12px rgba(0,0,0,.1);text-align:center}
 .card h3{color:#003366}
 @media(max-width:900px){nav{flex-direction:column;padding:15px}.menu{text-align:center;margin:12px 0}.menu a{display:inline-block;margin:6px}.hero{min-height:360px}.page-hero h1{font-size:36px}}
+
+.page-hero{
+  background:
+    linear-gradient(rgba(0,35,75,.45),rgba(0,35,75,.45)),
+    url("ChatGPT Image Jun 13, 2026, 01_21_26 AM.png");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:130px 20px;
+}
